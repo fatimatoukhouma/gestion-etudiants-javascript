@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestion-etudiants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="conteneur-principal">
+      <div class="entete-principal"> 
+
+         <div class="entete"> 
+         <p>Espace Administratif</p>
+         <h2>Gestion des étudiants UNCHK</h2>
+         <p class="description">Gérez les inscriptions et suivez les résultats</p>
+      </div>
+
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+
+     <div class="resultat">
+
+   <div class="total">
+        <h5>Total étudiants</h5>
+        <p id="totalEtudiants"></p>
+    </div>
+
+    <div class="moyenne">
+        <h5>Moyenne générale</h5>
+        <p id="moyenneGenerale"></p>
+    </div>
+
+    <div class="etudiant">
+         <h5>Etudiants admis</h5>
+         <p id="etudiantsAdmis"></p>
+    </div>
+
+</div>
+
+<div class="content">
+
+    <form id="form">
+
+     <div class="h1">
+        <h3>Ajouter un étudiant</h3>
+     </div>
+
+     <div class="champs">
+
+     <div>
+     <label for="nom">Nom</label>
+     <input type="text" id="nom" placeholder="Ex: Khouma">
+     </div>
+
+     <div>                                                
+     <label for="prenom">Prénom</label>                     
+     <input type="text" id="prenom" placeholder="Ex: Fatima">
+     </div>   
+     
+     <div>                                                
+     <label for="email">Adresse e-mail</label>                     
+     <input type="email" id="email" placeholder="fatimataxouma@gmail.com">
+     </div>                                               
+
+     <div>                                                
+     <label for="classe">Classe</label>                     
+     <input type="text" id="classe" placeholder="Ex: L2 Informatique">
+    </div>
+
+    <div>                                                
+    <label for="note">Note sur 20</label>                    
+    <input type="number" id="note" min="0" max="20"  step="0.1" placeholder="Ex: 15,5" required >
+    </div>       
+    <button id="btn">Ajouter l'étudiant</button>
+
+     </div>                                               
+    </form>
+    <p id="messageSucces"></p>
+    </div>
+      
+     <div class="content-1">
+        <div class="header">
+        <div>
+        <h3>Liste des étudiants</h3>                
+        <p>Consultez et gerer les inscriptions</p> 
+        </div>
+        <input type="text" id="recherche" placeholder="Rechercher un étudiant...">
+        </div>     
+          
+     <table>
+        <thead>
+     <tr>
+     <th>Nom Complet</th>
+     <th>E-mail</th>
+     <th>Classe</th>
+     <th>Note</th>
+     <th>Résultat</th>
+     <th>Actions</th>
+     </tr>
+     </thead>
+
+     <tbody id="listeEtudiants">
+     </tbody>
+    
+    </table>
+    </div>
+
+
+
+
+    </div>
+</body>
+</html>

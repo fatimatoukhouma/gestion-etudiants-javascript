@@ -1,0 +1,371 @@
+
+
+.entete-principal 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:50%;
+    padding:0 13%;
+    height: 100px;
+    background-color: rgb(5, 5, 110);
+    box-sizing: border-box;
+    background: linear-gradient(to right, #203b83, #2463eb);
+ 
+}
+.entete
+{
+  margin: auto;
+  margin-top: -15px;
+  width: auto;       
+  height:100px ;    
+  text-align: center;
+  padding-top:10px;
+   text-align: left;
+}           
+.entete p 
+{
+  color: white;
+  
+}
+.entete h2
+{        
+  color: white;
+   transform: translateY(-20px);
+}  
+.description         
+{                   
+  color: white;     
+  transform: translateY(-45px);
+  padding-top:5px;
+}  
+.total
+{
+  width:40%;
+  height:50px;
+background-color: white;
+  border: 1px solid white;
+  border-radius:5px;
+}       
+.moyenne  
+{       
+        width:40%;                           
+        height:50px;                          
+       background-color: white;
+        border: 1px solid white;
+        border-radius:5px;
+}       
+.etudiant 
+{       
+        width:40%;                           
+        height:50px;                          
+        background-color: white;
+         border: 1px solid white;
+         border-radius:5px;
+}      
+.resultat
+{
+    display: flex;
+    margin: 15px auto;
+    width:84%;
+    gap: 15px;
+    
+     
+    
+} 
+.resultat h5
+{
+    margin:5px auto;
+    color:gray;
+}
+.resultat p    
+{               
+   font-size:15px;
+   color:  #2a65e4;
+   margin-top:-1px;
+   margin-left:5px;
+   
+}               
+
+.conteneur-principal
+{
+  margin: 20px auto;
+  width: 65%;
+  height:850px ;
+  border: 1px solid black;
+  background-color: rgb(230, 229, 229);
+}
+
+.content
+{
+    width: 80%;
+    height: 300px;
+    margin: 15px auto; 
+    border: 1px solid white;
+    background-color: white;
+    padding: 20px;
+}
+.content-1            
+{                     
+    margin: 15px auto;
+    width: 80%;       
+    min-height: 50px;
+     border: 1px solid white;  
+    background-color: white;
+     padding: 20px;
+}                     
+.champs
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.champs div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.champs input
+{
+ padding: 10px;
+}
+#btn
+{
+   background: linear-gradient(to right, #203b83, #2463eb);
+   color: white;
+
+}
+#btn:hover
+{
+ cursor:pointer;
+}
+#messageSucces
+{
+    color:green;
+    text-align:right;
+    margin-top:5px;
+}
+.header
+{ 
+    display: flex;
+    justify-content: space-between;
+}
+.header p
+{
+  
+  color:gray;
+    
+}
+.header input
+{
+   border: 1px solid;
+   border-radius: 5px;
+   height: 15px;
+   margin-top: 25px;
+   padding: 10px;
+
+}
+/* Le tableau occupe toute la largeur disponible */
+table
+{
+    width:100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+th{
+    
+    color:#666;
+    font-size:12px;
+}
+td
+{
+    
+    border-top:1px solid #eee;
+    font-size:14px;
+    padding: 15px 12px;
+
+} 
+/* Les titres et les informations restent dans leurs colonnes */
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+/* Les lignes du tableau s'affichent normalement */
+thead tr,
+tbody tr {
+    display: table-row;
+}
+
+.badge{
+    background:#a5caaf;
+    color:#155724;
+    padding:4px 8px;
+    border-radius:10px;
+    font-size:12px;
+}  
+.btn-modifier
+{
+    background-color: rgb(158, 183, 212);
+    color: blue;
+    border:none;
+    padding:5px 5px;
+    border-radius:5px;
+    cursor:pointer;
+font-size: 12px;
+
+
+}
+.btn-supprimer
+{
+    background-color: rgb(238, 185, 185);
+    color: red; 
+    border:none;
+    padding:5px 5px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size: 12px;
+}     
+
+/* ============================= */
+/* INTERFACE RESPONSIVE */
+/* ============================= */
+
+/* Tablettes et petits écrans */
+@media (max-width: 768px) {
+
+    /* En-tête */
+    .entete-principal {
+        gap: 15px;
+        padding: 15px 5%;
+        height: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .entete {
+        margin: 0;
+        height: auto;
+    }
+
+    .entete h2 {
+        transform: none;
+    }
+
+    .description {
+        transform: none;
+        padding-top: 0;
+    }
+
+    /* Conteneur principal */
+    .conteneur-principal {
+        width: 95%;
+        height: auto;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+    }
+
+    /* Cartes statistiques */
+    .resultat {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .total,
+    .moyenne,
+    .etudiant {
+        flex: 1 1 140px;
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    /* Formulaire */
+    .content {
+        width: 90%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .champs {
+        grid-template-columns: 1fr;
+    }
+
+    .content-1 {
+        width: 90%;
+        box-sizing: border-box;
+        overflow-x: auto;
+    }
+
+    /* Recherche et titre du tableau */
+    .header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header input {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Tableau */
+    table {
+        min-width: 650px;
+    }
+}
+
+/* Téléphones */
+@media (max-width: 480px) {
+
+    .entete-principal {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resultat {
+        flex-direction: column;
+    }
+
+    .total,
+    .moyenne,
+    .etudiant {
+        width: 100%;
+        flex: auto;
+    }
+
+    .content,
+    .content-1 {
+        width: 95%;
+        padding: 12px;
+    }
+
+    .champs {
+        gap: 12px;
+    }
+
+    .champs input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #btn {
+        padding: 10px;
+    }
+
+    td {
+        padding: 10px 8px;
+    }
+}
+
+/* Effets au survol des boutons */
+#btn:hover {
+    opacity: 0.9;
+}
+
+.btn-modifier:hover,
+.btn-supprimer:hover {
+    opacity: 0.8;
+}
+
